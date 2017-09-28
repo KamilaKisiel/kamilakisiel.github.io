@@ -1,3 +1,5 @@
 ### Kamila Kisiel - portfolio
 
-My first repository on GitHub. 
+
+#####Projekt: *_Części samochodowe_*
+Aplikacja pozwoli w łatwy i szybki sposób odszukać części zamienne do samochodu.
