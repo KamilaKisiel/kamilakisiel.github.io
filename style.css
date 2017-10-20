@@ -1,0 +1,101 @@
+body {
+    background-color: #FFFFFF;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #1E98AA;
+    border-bottom: 3px solid #EAC67A;
+    height: 200px;
+    padding-top: 20px;
+}
+
+ul {
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+li {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100px;
+}
+
+ li a {
+    color: #FF69B4;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #3A3030;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #565656;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #0C4C7D;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: #3E3E3E;
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer {
+    background-color: #6EACAD;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #EAC67A;
+}
+
+footer a {
+    color: #3A3030;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.copyright {
+    color: #EAC67A;
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+}
+
+#Projekty {
+    background-color: #CDD5D1;
+    height: 600px;
+}
+
+#O-mnie {
+    background-image: url("images/abstract.jpg");
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    float: right;
+}
+
+#authors {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 0 10px;
+    clear: both;
+}
+
