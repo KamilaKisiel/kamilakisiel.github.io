@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700,Varela+Round" rel="stylesheet">
     <title>Kamila Kisiel - portfolio</title>
 </head>
 <body>
 
 <header>
   <h1>Kamila Kisiel - portfolio</h1>
+    <h3 class="job-title">Junior Frontend Developer</h3>
     <nav id="menu">
       <ul>
-          <li><a href="#O-mnie">O mnie</a></li>
-          <li><a href="#Projekty">Projekty</a></li>
-          <li><a href="#Kontakt">Kontakt</a></li>
+          <li class="navigator"><a href="#o-mnie">O mnie</a></li>
+          <li class="navigator"><a href="#projekty">Projekty</a></li>
+          <li class="navigator"><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
 </header>
 
 <main>
-  <aside id="O-mnie">
+  <aside id="o-mnie">
     <h2>O mnie</h2>
-           <img id="authors" src="images/foto.png" alt="Ja"/>
+           <img id="autor" src="images/foto.png" alt="Ja"/>
            <p> Mieszkam w Gdańsku, ale pochodzę <br>z podkarpacia.<br>
                Z wykształcenia jestem filozofem i magistrem ochrony środowiska,<br> a na co dzień pracuję w korporacji.
                Jestem uzależniona od czekolady, uwielbiam filmy i komiksy.
@@ -31,34 +33,52 @@
                Obecnie cały wolny czas poświęcam na doskonaleniu umiejętności potrzebnych
                do stworzenia efektywnej i nowoczesnej aplikacji webowej.<a target="_blank" href="https://pl.linkedin.com/in/kamila-kisiel-75bb45136">Więcej</a></p>
   </aside>
-  <div id="Projekty">
+  <section id="projekty">
      <h2>Projekty</h2>
+      <div class="project-container">
+        <h3>Portfolio</h3>
+          <p>Strona prezentująca moje dokonania w dziedzinie web developmentu.</p>
+            <a class="zobacz" target="_blank" href="https://github.com/KamilaKisiel/kamilakisiel.github.io">Zobacz projekt</a>
+      </div>
       <div class="project-container">
        <h3>Części samochodowe</h3>
          <p>Aplikacja codeVIN służy do szybkiego i łatwego wyszukiwania części zamiennych do samochodu.</p>
-      <a target="_blank" href="https://github.com/KamilaKisiel/kamilakisiel.github.io">Zobacz projekt</a>
+           <a class="zobacz" target="_blank" href="https://github.com/infoshareacademy/jfdz7-swiezaki">Zobacz projekt</a>
       </div>
       <div class="project-container">
-          <h3>Lorem ipsum</h3>
+         <h3>Lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
               Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
               Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
               Phasellus fermentum in, dolor. Pellentesque facilisis. </p>
       </div>
       <div class="project-container">
-          <h3>Lorem ipsum</h3>
+         <h3>Lorem ipsum</h3>
             <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
               Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
               Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim.
               Phasellus fermentum in, dolor. Pellentesque facilisis. </p>
       </div>
-  </div>
+  </section>
 </main>
 
-<footer id="Kontakt">
+<footer id="kontakt">
      <h2>Kontakt</h2>
-       <a href="mailto:kisiel.kamila@gmail.com">Napisz do mnie</a>
-     <div class="copyright">Kamila Kisiel &copy 2017</div>
+       <section class="contact-icons">
+           <ul class="contact-icon-list">
+           <li class="contact-icon-element">
+              <a target="_blank" href="https://github.com/KamilaKisiel"><img class="contact-icon" src="images/github-logo.svg" title="GitHub" alt="GitHub"></a>
+           </li>
+           <li class="contact-icon-element">
+              <a target="_blank" href="https://pl.linkedin.com/in/kamila-kisiel-75bb45136"><img class="contact-icon" src="images/linkedin-logo.svg" title="LinkedIn" alt="LinkedIn"></a>
+           </li>
+           <li class="contact-icon-element">
+               <a target="_blank" href="mailto:kisiel.kamila@gmail.com"><img class="contact-icon" src="images/message-closed-envelope.svg" title="Mail" alt="Mail"></a>
+           </li>
+           </ul>
+       </section>
+
+     <div class="copyright">Kamila Kisiel &copy; 2017</div>
 </footer>
 
 </body>

@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #FFFFFF;
-    width: 960px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -19,21 +22,26 @@ ul {
 }
 
 li {
-    color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
     display: inline-block;
     width: 100px;
+    padding-top: 10px;
 }
 
- li a {
+ .navigator a {
     color: #FF69B4;
     background-color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+ .zobacz {
+     font-family: 'Varela Round', sans-serif;
+     font-size: 15px;
+ }
 
 h1 {
     color: #3A3030;
@@ -42,6 +50,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
+
 }
 
 h2 {
@@ -72,30 +81,69 @@ footer a {
     font-family: 'Varela Round', sans-serif;
 }
 
+ .job-title {
+    color: #3E3E3E;
+    text-align: center;
+    line-height: 0;
+}
+
 .copyright {
     color: #EAC67A;
     font-family: 'Oswald', sans-serif;
     text-align: right;
 }
 
-#Projekty {
-    background-color: #CDD5D1;
-    height: 600px;
+.contact-icons {
+    display: table;
+    position: relative;
+    z-index: 5;
+
+}
+.contact-icon-list {
+    width: 178px;
+    height: 42px;
+    display: table-cell;
 }
 
-#O-mnie {
+.contact-icon {
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+}
+
+.contact-icon-element {
+    border: 2px solid #EAC67A;
+    border-radius: 50%;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+}
+
+#projekty {
+    background-color: #CDD5D1;
+    height: 600px;
+    padding-left: 10px;
+}
+
+#o-mnie {
     background-image: url("images/abstract.jpg");
     text-align: center;
-    width: 300px;
+    width: 32%;
     height: 600px;
     float: right;
 }
 
-#authors {
-    width: 200px;
-    height: 200px;
+#autor {
+    width: 190px;
+    height: 190px;
     border-radius: 100%;
     margin: 0 10px;
     clear: both;
 }
+@media only screen and (max-width: 1000px) {
+    #o-mnie { display: block; }
+}
 
+@media only screen and (max-width: 680px) {
+    #o-mnie { display: none; }
+}
