@@ -19,10 +19,23 @@ aside {
     justify-content: flex-end;
 }
 
+.slogan p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #1E98AA;
+    color: #EAC67A;
+    text-align: center;
+    margin: 2px auto;
+
+}
+
+
+
 header {
     background-color: #1E98AA;
     border-bottom: 3px solid #EAC67A;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 ul {
@@ -181,11 +194,15 @@ footer {
     #o-mnie #projekty {
         width: 100%;
     }
+    #projekty {
+        display: flex;
+        flex-flow: wrap;
+    }
      img.autor {
         max-width: 100%;
     }
      li.navigator {
-         display: block;;
+         display: block;
          margin: 10% 0;
      }
 }
