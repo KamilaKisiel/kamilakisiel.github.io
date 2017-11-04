@@ -12,6 +12,21 @@ header {
     border-bottom: 3px solid #EAC67A;
     padding-top: 5px;
 }
+h1 {
+    color: #3A3030;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.job-title {
+    color: #3E3E3E;
+    text-align: center;
+    line-height: 0;
+}
 
 ul {
     margin: 30px auto;
@@ -39,11 +54,7 @@ li .navigator:last-of-type {
     padding: 5px 10px;
     border-radius: 5px;
 }
-.job-title {
-    color: #3E3E3E;
-    text-align: center;
-    line-height: 0;
-}
+
 .slogan p {
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
@@ -112,16 +123,6 @@ img.autor {
     border-radius: 100%;
     margin: 0 auto;
     clear: both;
-}
-
-h1 {
-    color: #3A3030;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-
 }
 
 h2 {
