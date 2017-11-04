@@ -4,34 +4,9 @@
 body {
     background-color: #FFFFFF;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
-
-main {
-    display: flex;
-    padding-top: 20px;
-}
-section #projekty {
-    justify-content: flex-start;
-}
-aside {
-    justify-content: flex-end;
-}
-
-.slogan p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #1E98AA;
-    color: #EAC67A;
-    text-align: center;
-    margin: 2px auto;
-
-}
-
-
-
+/*Header*/
 header {
     background-color: #1E98AA;
     border-bottom: 3px solid #EAC67A;
@@ -58,36 +33,86 @@ li .navigator:last-of-type {
     margin-right: 0;
 }
 
- .navigator a {
+.navigator a {
     color: #FF69B4;
     background-color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 5px;
+}
+.job-title {
+    color: #3E3E3E;
+    text-align: center;
+    line-height: 0;
+}
+.slogan p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #1E98AA;
+    color: #EAC67A;
+    text-align: center;
+    margin: 2px auto;
 }
 .experience {
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     background-color: #E9EBEE;
- }
+}
 
 .exp-chart {
     text-align: center;
 }
 
 .chart {
-     width: 50px;
-     height: 50px;
- }
+    width: 50px;
+    height: 50px;
+}
 .exp-chart p {
     font-family: Oswald, sans-serif;
     color: #565656;
 }
+/*End of header*/
 
- .see-project {
-     font-family: 'Varela Round', sans-serif;
-     font-size: 15px;
- }
+/*Main*/
+
+.main-container {
+    background-color: #CDD5D1;
+    margin: 20px 0;
+    height: 100%;
+}
+
+#projekty {
+    padding-left: 10px;
+    width: 66.6666%;
+    float: left;
+    height: 100%;
+}
+.project-container:last-of-type {
+    padding-bottom: 8px;
+}
+
+.see-project {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+}
+
+#o-mnie {
+    background-image: url("images/abstract.jpg");
+    text-align: center;
+    padding: 0 2%;
+    width: 33.3333%;
+    display: inline-block;
+}
+
+img.autor {
+    max-width: 100%;
+    width: 190px;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin: 0 auto;
+    clear: both;
+}
 
 h1 {
     color: #3A3030;
@@ -114,20 +139,15 @@ p {
     color: #3E3E3E;
     font-family: 'Varela Round', sans-serif;
 }
+/*End of main*/
 
+/*Footer*/
 footer {
     background-color: #1E98AA;
     padding: 20px;
     margin-top: 20px;
     border-top: 3px solid #EAC67A;
 }
-
- .job-title {
-    color: #3E3E3E;
-    text-align: center;
-    line-height: 0;
-}
-
 .copyright {
     color: #EAC67A;
     font-family: 'Oswald', sans-serif;
@@ -159,50 +179,27 @@ footer {
     height: 42px;
     width: 42px;
 }
+/*End of footer*/
 
-#projekty {
-    background-color: #CDD5D1;
-    padding-left: 10px;
-    width: 66.6666%;
-    float: left;
-}
-
-#o-mnie {
-    background-image: url("images/abstract.jpg");
-    text-align: center;
-    padding: 0 2%;
-    width: 33.3333%;
-    float: right;
-}
-
-.autor {
-    max-width: 100%;
-    width: 190px;
-    vertical-align: middle;
-    border-radius: 100%;
-    margin: 0 auto;
-    clear: both;
-}
-@media (max-width: 1000px) {
-    #o-mnie {
-        display: block;
-    }
-}
-
-@media (max-width: 800px) {
-
-    #o-mnie #projekty {
+@media (max-width: 768px) {
+    #o-mnie, #projekty {
         width: 100%;
     }
-    #projekty {
-        display: flex;
-        flex-flow: wrap;
-    }
-     img.autor {
+    img.autor {
         max-width: 100%;
     }
      li.navigator {
          display: block;
          margin: 10% 0;
      }
+}
+@media (min-width: 1200px) {
+    body {
+        max-width: 900px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        min-width: 425px;
+    }
 }
