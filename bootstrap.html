@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bs_styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700,Varela+Round" rel="stylesheet">
+    <title>Kamila Kisiel - portfolio</title>
+</head>
+<body>
+<div class="welcome">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Kamila Kisiel<br><small>portfolio</small></br></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#o-mnie">O mnie</a></li>
+                    <li><a href="#projekty">Projekty</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="welcome-text">
+    <div class="text-center">
+        <h1>Kamila Kisiel</h1>
+        <p>Junior Frontend Developer</p>
+    </div>
+</div>
+
+<div class="container-fluid main-container">
+    <div class="row">
+        <div id="projekty">
+            <h2>Projekty</h2>
+            <div class="project-container">
+                <h3>Portfolio</h3>
+                <p>Strona prezentująca moje dokonania w dziedzinie web developmentu.</p>
+                <a class="see-project" target="_blank" href="https://github.com/KamilaKisiel/kamilakisiel.github.io"><img class="img-responsive center-block" src="images/portfolio1.PNG" alt="portfolio"/></a>
+            </div>
+            <div class="project-container">
+                <h3>Części samochodowe</h3>
+                <p>Aplikacja codeVIN służy do szybkiego i łatwego wyszukiwania części zamiennych do samochodu.</p>
+                <a class="see-project" target="_blank" href="https://github.com/infoshareacademy/jfdz7-swiezaki"><img class="img-responsive center-block" src="images/codeVIN.PNG" alt="codeVIN"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid experience-section">
+    <div class="row flex-container">
+        <div class="col-md-4"><img class="img-responsive center-block experience" src="images/html.svg"/></div>
+        <div class="col-md-4"><img class="img-responsive center-block experience" src="images/css.svg"/></div>
+        <div class="col-md-4"><img class="img-responsive center-block experience" src="images/javascript.svg"/></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="o-mnie">
+            <h2>O mnie</h2>
+            <img class="autor img-responsive" src="images/foto.png" alt="Ja"/>
+            <p> Mieszkam w Gdańsku, ale pochodzę z podkarpacia.
+                Z wykształcenia jestem filozofem i magistrem ochrony środowiska, a na co dzień pracuję w korporacji.
+                Jestem uzależniona od czekolady, uwielbiam filmy i komiksy.
+                Nie lubię zimy, diet i zatłoczonych SKMek.
+                Przygodę z HTML, CSS i JavaSript rozpoczęłam z kursem infoShare Academy.
+                Obecnie cały wolny czas poświęcam na doskonaleniu umiejętności potrzebnych
+                do stworzenia efektywnej i nowoczesnej aplikacji webowej.</p>
+            <p><a target="_blank" href="https://pl.linkedin.com/in/kamila-kisiel-75bb45136">Więcej</a></p>
+        </div>
+    </div>
+</div>
+
+<footer id="kontakt">
+    <div class="container">
+        <div class="row">
+            <h2>Kontakt</h2>
+            <ul class="contact-icon-list">
+                <li class="contact-icon-element">
+                    <a target="_blank" href="https://github.com/KamilaKisiel"><img class="contact-icon" src="images/github-logo.svg" title="GitHub" alt="GitHub"></a>
+                </li>
+                <li class="contact-icon-element">
+                    <a target="_blank" href="https://pl.linkedin.com/in/kamila-kisiel-75bb45136"><img class="contact-icon" src="images/linkedin-logo.svg" title="LinkedIn" alt="LinkedIn"></a>
+                </li>
+                <li class="contact-icon-element">
+                    <a target="_blank" href="mailto:kisiel.kamila@gmail.com"><img class="contact-icon" src="images/message-closed-envelope.svg" title="Mail" alt="Mail"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">Kamila Kisiel &copy; 2017</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="./Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
