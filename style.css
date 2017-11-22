@@ -4,20 +4,128 @@
 body {
     background-color: #FFFFFF;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+/*Header*/
+header {
+    background-color: #1E98AA;
+    border-bottom: 3px solid #EAC67A;
+    padding-top: 5px;
+}
+h1 {
+    color: #3A3030;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
 }
 
-main {
-    display: flex;
-    padding-top: 20px;
+
+.job-title {
+    color: #3E3E3E;
+    text-align: center;
+    line-height: 0;
 }
-section #projekty {
-    justify-content: flex-start;
+
+.burger {
+    display: inline-block;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+
+    border-bottom: 4px solid black;
+    width: 28px;
+
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
 }
-aside {
-    justify-content: flex-end;
+.burger:before {
+     content: "";
+     display: block;
+     border-bottom: 4px solid black;
+     width: 100%;
+     margin-bottom: 5px;
+     transition: transform 0.5s ease-in-out;
+     -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+
+.burger:after {
+     content: "";
+     display: block;
+     border-bottom: 4px solid black;
+     width: 100%;
+     margin-bottom: 5px;
+     transition: transform 0.5s ease-in-out;
+     -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+
+.burger-check {
+    display: none;
 }
+
+.burger-check:checked ~ .burger {
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.8s ease-in-out;
+    -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:before {
+     transform: rotate(-405deg) translateY(1px) translateX(-3px);
+     -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+     transition: transform 0.5s ease-in-out;
+     -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+
+.burger-check:checked ~ .burger:after {
+     transform: rotate(405deg) translateY(-4px) translateX(-5px);
+     -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+     transition: transform 0.5s ease-in-out;
+     -webkit-transition: -webkit-transform 0.5s ease-in-out;
+ }
+
+.navigation {
+    overflow: hidden;
+    max-height: 0;
+
+    transition: max-height 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .navigation {
+    max-height: 500px;
+
+    transition: max-height 0.5s ease-in-out;
+}
+
+/*ul {*/
+    /*margin: 30px auto;*/
+    /*padding: 0 20px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*li {*/
+    /*font-family: 'Oswald', sans-serif;*/
+    /*font-size: 20px;*/
+    /*font-weight: 300;*/
+    /*text-transform: uppercase;*/
+    /*display: inline-block;*/
+    /*padding-top: 10px;*/
+    /*margin-right: 0.7%;*/
+/*}*/
+
+/*li .navigator:last-of-type {*/
+    /*margin-right: 0;*/
+/*}*/
+
+/*.navigator a {*/
+    /*color: #FF69B4;*/
+    /*background-color: #FFFFFF;*/
+    /*padding: 5px 10px;*/
+    /*border-radius: 5px;*/
+/*}*/
 
 .slogan p {
     font-family: 'Oswald', sans-serif;
@@ -27,76 +135,66 @@ aside {
     color: #EAC67A;
     text-align: center;
     margin: 2px auto;
-
-}
-
-
-
-header {
-    background-color: #1E98AA;
-    border-bottom: 3px solid #EAC67A;
-    padding-top: 5px;
-}
-
-ul {
-    margin: 30px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-li {
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    display: inline-block;
-    padding-top: 10px;
-    margin-right: 0.7%;
-}
-
-li .navigator:last-of-type {
-    margin-right: 0;
-}
-
- .navigator a {
-    color: #FF69B4;
-    background-color: #FFFFFF;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 .experience {
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     background-color: #E9EBEE;
- }
+}
 
 .exp-chart {
     text-align: center;
 }
 
 .chart {
-     width: 50px;
-     height: 50px;
- }
+    width: 50px;
+    height: 50px;
+}
 .exp-chart p {
     font-family: Oswald, sans-serif;
     color: #565656;
 }
+/*End of header*/
 
- .see-project {
-     font-family: 'Varela Round', sans-serif;
-     font-size: 15px;
- }
+/*Main*/
 
-h1 {
-    color: #3A3030;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    text-transform: uppercase;
+.main-container {
+    background-color: #CDD5D1;
+    margin: 20px 0;
+    height: 100%;
+}
+
+#projekty {
+    padding-left: 10px;
+    width: 66.6666%;
+    float: left;
+    height: 100%;
+}
+.project-container:last-of-type {
+    padding-bottom: 8px;
+}
+
+.see-project {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+}
+
+#o-mnie {
+    background-image: url("images/abstract.jpg");
     text-align: center;
-    letter-spacing: 2px;
+    padding: 0 2%;
+    width: 33.3333%;
+    display: inline-block;
+}
 
+img.autor {
+    max-width: 100%;
+    width: 190px;
+    vertical-align: middle;
+    border-radius: 100%;
+    margin: 0 auto;
+    clear: both;
 }
 
 h2 {
@@ -114,20 +212,15 @@ p {
     color: #3E3E3E;
     font-family: 'Varela Round', sans-serif;
 }
+/*End of main*/
 
+/*Footer*/
 footer {
     background-color: #1E98AA;
     padding: 20px;
     margin-top: 20px;
     border-top: 3px solid #EAC67A;
 }
-
- .job-title {
-    color: #3E3E3E;
-    text-align: center;
-    line-height: 0;
-}
-
 .copyright {
     color: #EAC67A;
     font-family: 'Oswald', sans-serif;
@@ -159,50 +252,27 @@ footer {
     height: 42px;
     width: 42px;
 }
+/*End of footer*/
 
-#projekty {
-    background-color: #CDD5D1;
-    padding-left: 10px;
-    width: 66.6666%;
-    float: left;
-}
-
-#o-mnie {
-    background-image: url("images/abstract.jpg");
-    text-align: center;
-    padding: 0 2%;
-    width: 33.3333%;
-    float: right;
-}
-
-.autor {
-    max-width: 100%;
-    width: 190px;
-    vertical-align: middle;
-    border-radius: 100%;
-    margin: 0 auto;
-    clear: both;
-}
-@media (max-width: 1000px) {
-    #o-mnie {
-        display: block;
-    }
-}
-
-@media (max-width: 800px) {
-
-    #o-mnie #projekty {
+@media (max-width: 768px) {
+    #o-mnie, #projekty {
         width: 100%;
     }
-    #projekty {
-        display: flex;
-        flex-flow: wrap;
-    }
-     img.autor {
+    img.autor {
         max-width: 100%;
     }
      li.navigator {
          display: block;
          margin: 10% 0;
      }
+}
+@media (min-width: 1200px) {
+    body {
+        max-width: 900px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        min-width: 425px;
+    }
 }
