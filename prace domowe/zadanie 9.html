@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery - day two</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .active {
+            background: cornflowerblue;
+        }
+        #scroll-top-btn {
+            background: yellow;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .highlight {
+            background-color: lightgreen;
+        }
+
+        form {
+            padding: 5px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <input id="first-name" type="text" placeholder="Imię" name="firstname">
+    <input id="last-name" type="text" placeholder="Nazwisko" name="lastname">
+    <input id="age" type="number" placeholder="Wiek" name="userage">
+    <select id="city" name="city">
+        <option value="" disabled selected>Wybierz</option>
+        <option value="Lubaczow">Lubaczów</option>
+        <option value="Cieszanow">Cieszanów</option>
+        <option value="Oleszyce">Oleszyce</option>
+        <option value="Narol">Narol</option>
+        <option value="Horyniec">Horyniec</option>
+    </select>
+    <button id="add-user" type="button" disabled >Dodaj użytkownika</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="zadanie%209.js"></script>
+</body>
+</html>
