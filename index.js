@@ -1,7 +1,7 @@
-var map = require('lodash');
+var map = require('lodash/map');
 
-var numbers = [25,36,47,21,96,3];
+function square(n) {
+    return n*n;
+}
 
-map.each(numbers, function(number, i){
-    console.log(number);
-});
+console.log(map([1,2,3,4,5,6], square));
