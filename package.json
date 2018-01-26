@@ -1,0 +1,25 @@
+{
+  "name": "kamilakisiel.github.io",
+  "version": "1.0.0",
+  "description": "Kamila Kisiel - portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamilaKisiel/kamilakisiel.github.io.git"
+  },
+  "author": "Kamila Kisiel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamilaKisiel/kamilakisiel.github.io/issues"
+  },
+  "homepage": "https://github.com/KamilaKisiel/kamilakisiel.github.io#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}
