@@ -4,7 +4,10 @@
   "description": "Kamila Kisiel - portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "npm run build",
+    "build": "webpack",
+    "prebuild": "del-cli dist -f",
+    "buildmin": "minify input.js --out-file output.min.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +20,14 @@
   },
   "homepage": "https://github.com/KamilaKisiel/kamilakisiel.github.io#readme",
   "dependencies": {
+    "del-cli": "^1.1.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-minify": "^0.2.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1"
   }
