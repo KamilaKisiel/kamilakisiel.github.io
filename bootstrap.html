@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700,Varela+Round" rel="stylesheet">
     <title>Kamila Kisiel - portfolio</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 <header class="mx-auto ">
 <div class="container">
     <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
@@ -20,30 +20,30 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <div class="collapse navbar-collapse" id="navbar-example">
+            <ul class="nav nav-tabs navbar-nav mr-auto mt-2 mt-lg-0 text-uppercase" role="tablist">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">my work <span class="sr-only">(current)</span></a>
+                    <a class="nav-link smooth-scroll" href="#projekty">my work <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">about me</a>
+                    <a class="nav-link smooth-scroll" href="#o-mnie">about me</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                <li class="nav-item smooth-scroll">
+                    <a class="nav-link" href="#kontakt">contact</a>
                 </li>
             </ul>
         </div>
        </div>
     </nav>
 </div>
-<div class="welcome-text">
+<div class=" container-fuild welcome-text">
     <div class="text-center">
         <h1>Kamila Kisiel</h1>
         <p>Junior Frontend Developer</p>
     </div>
 </div>
 </header>
-<div class="container-fluid main-container">
+<div class="container main-container">
     <div class="row">
         <div id="projekty">
             <h2>Projekty</h2>
@@ -102,7 +102,7 @@
         </div>
     </div>
 
-    <div class="copyright">Kamila Kisiel &copy; 2017</div>
+    <div class="copyright">Kamila Kisiel &copy; 2018</div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
