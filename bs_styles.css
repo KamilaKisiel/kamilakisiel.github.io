@@ -40,8 +40,11 @@ a {
     width: 100%;
     min-height: 300px;
 }
+.text-center {
+    margin-right: 30px;
+}
 .text-center h1 {
-    vertical-align: middle;
+    letter-spacing: 6px;
 }
 h1 {
     font-family: 'Oswald', sans-serif;
