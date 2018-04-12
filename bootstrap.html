@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,20 +23,20 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="nav nav-tabs navbar-nav text-uppercase" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link" href="#projekty">my work</a>
+                            <a class="nav-link" href="#projects">my work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#o-mnie">about me</a>
+                            <a class="nav-link" href="#about-me">about me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#kontakt">contact</a>
+                            <a class="nav-link" href="#contact">contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="container-fuild top-header welcome-text">
+    <div class="container-fuild top-header">
         <div class="d-flex welcome-text align-items-center justify-content-center item my-auto">
             <div class="text-center pt-5">
                 <h1>Kamila Kisiel</h1>
@@ -45,23 +45,40 @@
         </div>
     </div>
 </header>
-<div class="container main-container">
-    <div class="row">
-        <div id="projekty">
-            <h2>Projekty</h2>
-            <div class="project-container">
-                <h3>Portfolio</h3>
-                <p>Strona prezentująca moje dokonania w dziedzinie web developmentu.</p>
-                <a class="see-project" target="_blank" href="https://github.com/KamilaKisiel/kamilakisiel.github.io"><img class="img-responsive center-block" src="images/portfolio1.PNG" alt="portfolio"/></a>
-            </div>
-            <div class="project-container">
-                <h3>Części samochodowe</h3>
-                <p>Aplikacja codeVIN służy do szybkiego i łatwego wyszukiwania części zamiennych do samochodu.</p>
-                <a class="see-project" target="_blank" href="https://github.com/infoshareacademy/jfdz7-swiezaki"><img class="img-responsive center-block" src="images/codeVIN.PNG" alt="codeVIN"/></a>
+<main class="mx-auto main-container">
+    <section id="projects">
+        <div class="section-title pt-8">
+            <h2>portfolio</h2>
+        </div>
+        <div class="container mx-auto">
+            <div class="d-flex align-items-center justify-content-around mx-auto" >
+                <div class="project-container">
+                    <a class="see-project" target="_blank" href="https://cdn.rawgit.com/KamilaKisiel/kamilakisiel.github.io/develop/bootstrap.html">
+                        <img class="img-responsive center-block"
+                       src="images/portfolio.png"
+                       alt="portfolio"/>
+                    </a>
+                    <div class="project-dsc">Kamila Kisiel, Frontend Web Developer, Portfolio</div>
+                    <div class="project-tech">Using HTML, CSS, JavaScript</div>
+                </div>
+                <div class="project-container">
+                    <a class="see-project" target="_blank" href="http://www.swiezaki.jfdz7.is-academy.pl/">
+                        <img class="img-responsive center-block" src="images/zapowiedz.png" alt="premiere"/>
+                    </a>
+                    <div class="project-dsc">Car Parts Search Engine, infoShareAcademy group project, App preview </div>
+                    <div class="project-tech">Using HTML, CSS, JavaScript</div>
+                </div>
+                <div class="project-container">
+                    <a class="see-project" target="_blank" href="http://app.swiezaki.jfdz7.is-academy.pl/">
+                        <img class="img-responsive center-block" src="images/wyszukiwarka.png" alt="search"/>
+                    </a>
+                    <div class="project-dsc">Car Parts Search Engine, infoShareAcademy group project, App</div>
+                    <div class="project-tech">Using HTML, CSS, JavaScript, ReactJS</div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+</main>
 <div class="container-fluid experience-section">
     <div class="row flex-container">
         <div class="col-md-4"><img class="img-responsive center-block experience" src="images/html.svg"/></div>
@@ -71,7 +88,7 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div id="o-mnie">
+        <div id="about-me">
             <h2>O mnie</h2>
             <img class="autor img-responsive" src="images/foto.png" alt="Ja"/>
             <p> Mieszkam w Gdańsku, ale pochodzę z podkarpacia.
@@ -86,7 +103,7 @@
     </div>
 </div>
 
-<footer id="kontakt">
+<footer id="contact">
     <div class="container">
         <div class="row">
             <h2>Kontakt</h2>
