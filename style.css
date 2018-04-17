@@ -20,6 +20,27 @@ header {
     width: 100%;
     z-index: 1;
 }
+.menu
+{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav li {
+    display: inline;
+    color: #222222;
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav li a {
+    color: inherit;
+    text-decoration: none;
+}
 .menu-short, .menu-short a {
     background-color: #E9EBEE;
     font-size: 18px;
