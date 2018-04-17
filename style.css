@@ -151,34 +151,22 @@ h1 {
 main {
     padding: 0 20px;
 }
-.project-container:last-of-type {
-    padding-bottom: 8px;
-}
 
-.see-project {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 15px;
-}
 .flex-container-center {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
 }
-/*#o-mnie {*/
-    /*background-image: url("images/abstract.jpg");*/
-    /*text-align: center;*/
-    /*padding: 0 2%;*/
-    /*width: 33.3333%;*/
-    /*display: inline-block;*/
-/*}*/
+.project-container img{
+    display: block;
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5%;
+}
 
 img.autor {
-    /*max-width: 100%;*/
-    /*width: 190px;*/
-    /*vertical-align: middle;*/
-    /*border-radius: 100%;*/
-    /*margin: 0 auto;*/
-    /*clear: both;*/
     height: 200px;
     width: 200px;
     margin: auto;
