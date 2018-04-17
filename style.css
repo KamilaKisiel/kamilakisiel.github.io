@@ -1,6 +1,6 @@
-* {
-    box-sizing: border-box;
-}
+/** {*/
+    /*box-sizing: border-box;*/
+/*}*/
 body {
     background-color: #FFFFFF;
     /*width: 75%;*/
@@ -12,13 +12,77 @@ header {
     background-size: cover;
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 #top {
     position: relative;
     height: 50px;
     width: 100%;
     z-index: 1;
+}
+.menu-short, .menu-short a {
+    background-color: #E9EBEE;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0 5px;
+    position: relative;
+}
+.menu-short span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #222222;
+    margin-bottom:5px;
+    margin-top:5px;
+    padding: 0 5px;
+}
+.checkbox-menu {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 90%;
+    cursor: pointer;
+}
+
+input.checkbox-menu {
+    opacity: 0;
+}
+
+.menu-short-collapse {
+    position: fixed;
+    right: -160px;
+    top: 80px;
+    width: 160px;
+    color: #E9EBEE;
+    background-color: #222222;
+    transition: right 2s;
+    -webkit-transition: right 2s;
+    padding-bottom: 10px;
+    opacity: 0.9;
+}
+
+span.menu-short-list {
+    padding: 10px 0 10px 25px;
+    border-bottom: 4px solid #EAC67A;
+}
+
+span.menu-short-list a {
+    color: #E9EBEE;
+    background: #222222;
+}
+
+span.menu-short-list a:hover {
+    color: #EAC67A;
+    background-color: #222222;
+}
+.menu-short input:checked~.menu-short-collapse {
+    right: 0;
 }
 h1 {
     color: #3A3030;
@@ -36,105 +100,6 @@ h1 {
     text-align: center;
     line-height: 0;
 }
-
-.burger {
-    display: inline-block;
-    border: 0;
-    background: none;
-    outline: 0;
-    padding: 0;
-    cursor: pointer;
-
-    border-bottom: 4px solid black;
-    width: 28px;
-
-    transition: border-bottom 1s ease-in-out;
-    -webkit-transition: border-bottom 1s ease-in-out;
-}
-.burger:before {
-     content: "";
-     display: block;
-     border-bottom: 4px solid black;
-     width: 100%;
-     margin-bottom: 5px;
-     transition: transform 0.5s ease-in-out;
-     -webkit-transition: -webkit-transform 0.5s ease-in-out;
- }
-
-.burger:after {
-     content: "";
-     display: block;
-     border-bottom: 4px solid black;
-     width: 100%;
-     margin-bottom: 5px;
-     transition: transform 0.5s ease-in-out;
-     -webkit-transition: -webkit-transform 0.5s ease-in-out;
- }
-
-.burger-check {
-    display: none;
-}
-
-.burger-check:checked ~ .burger {
-    border-bottom: 4px solid transparent;
-    transition: border-bottom 0.8s ease-in-out;
-    -webkit-transition: border-bottom 0.8s ease-in-out;
-}
-
-.burger-check:checked ~ .burger:before {
-     transform: rotate(-405deg) translateY(1px) translateX(-3px);
-     -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
-     transition: transform 0.5s ease-in-out;
-     -webkit-transition: -webkit-transform 0.5s ease-in-out;
- }
-
-.burger-check:checked ~ .burger:after {
-     transform: rotate(405deg) translateY(-4px) translateX(-5px);
-     -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
-     transition: transform 0.5s ease-in-out;
-     -webkit-transition: -webkit-transform 0.5s ease-in-out;
- }
-
-.navigation {
-    overflow: hidden;
-    max-height: 0;
-
-    transition: max-height 0.5s ease-in-out;
-}
-
-.burger-check:checked ~ .navigation {
-    max-height: 500px;
-
-    transition: max-height 0.5s ease-in-out;
-}
-
-/*ul {*/
-    /*margin: 30px auto;*/
-    /*padding: 0 20px;*/
-    /*text-align: center;*/
-/*}*/
-
-/*li {*/
-    /*font-family: 'Oswald', sans-serif;*/
-    /*font-size: 20px;*/
-    /*font-weight: 300;*/
-    /*text-transform: uppercase;*/
-    /*display: inline-block;*/
-    /*padding-top: 10px;*/
-    /*margin-right: 0.7%;*/
-/*}*/
-
-/*li .navigator:last-of-type {*/
-    /*margin-right: 0;*/
-/*}*/
-
-/*.navigator a {*/
-    /*color: #FF69B4;*/
-    /*background-color: #FFFFFF;*/
-    /*padding: 5px 10px;*/
-    /*border-radius: 5px;*/
-/*}*/
-
 .slogan p {
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
@@ -275,12 +240,18 @@ footer {
      /*}*/
 /*}*/
 /*@media (min-width: 1200px) {*/
-    /*body {*/
-        /*max-width: 900px;*/
-    /*}*/
+    /*!*header {*!*/
+        /*!*max-width: 900px;*!*/
+    /*!*}*!*/
 /*}*/
-/*@media (max-width: 576px) {*/
+@media (min-width: 576px) {
     /*body {*/
         /*min-width: 425px;*/
     /*}*/
-/*}*/
+    .menu ul {
+        display: block;
+    }
+    .menu-short {
+        display: none;
+    }
+}
