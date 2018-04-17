@@ -97,7 +97,6 @@ span.menu-short-list {
     padding: 10px 0 10px 25px;
     border-bottom: 4px solid #EAC67A;
 }
-
 span.menu-short-list a {
     color: #E9EBEE;
     background: #222222;
@@ -130,6 +129,17 @@ h1 {
     font-size: 50px;
     color: #EAC67A;
     text-shadow: 2px 2px #3A3030;
+
+}
+
+.slogan p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #1E98AA;
+    color: #EAC67A;
+    text-align: center;
+    margin: 2px auto;
 }
 .experience {
     padding-top: 20px;
@@ -240,6 +250,7 @@ footer {
 }
 /*End of footer*/
 
+
 /*@media (max-width: 768px) {*/
     /*#o-mnie, #projekty {*/
         /*width: 100%;*/
@@ -266,5 +277,6 @@ footer {
     }
     .menu-short {
         display: none;
+
     }
 }
