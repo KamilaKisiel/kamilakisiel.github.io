@@ -119,12 +119,17 @@ h1 {
     letter-spacing: 2px;
 
 }
-
-
 .job-title {
-    color: #3E3E3E;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 6px;
     text-align: center;
-    line-height: 0;
+    position: relative;
+    top: 25vh;
+}
+.job-title h1 {
+    font-size: 50px;
+    color: #EAC67A;
+    text-shadow: 2px 2px #3A3030;
 }
 .experience {
     padding-top: 20px;
