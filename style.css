@@ -157,6 +157,9 @@ main {
     flex-flow: wrap;
     justify-content: center;
 }
+.project-container {
+    width: 315px;
+}
 .project-container img{
     display: block;
     height: 200px;
@@ -164,6 +167,7 @@ main {
     margin: auto;
     padding: 5px;
     border-radius: 5%;
+    vertical-align: bottom;
 }
 
 img.autor {
