@@ -182,6 +182,9 @@ img.autor {
     padding: 5px;
     border-radius: 100%;
 }
+.about-me {
+    padding: 0 20%;
+}
 
 h2 {
     color: #383838;
