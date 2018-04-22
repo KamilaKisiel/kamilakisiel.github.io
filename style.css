@@ -94,9 +94,9 @@ input.checkbox-menu {
 
 .menu-short-collapse {
     position: fixed;
-    left: -130px;
+    left: -100px;
     top: 80px;
-    width: 130px;
+    width: 100px;
     color: #E9EBEE;
     background-color: #222222;
     transition: left 2s;
@@ -106,7 +106,7 @@ input.checkbox-menu {
 }
 
 span.menu-shortlist {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 15px 20%;
     border-bottom: 4px solid #EAC67A;
 }
 span.menu-shortlist a {
