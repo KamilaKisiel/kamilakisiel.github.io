@@ -28,6 +28,9 @@ header {
     align-items: center;
     justify-content: flex-end;
 }
+.menu ul {
+    display: none;
+}
 nav li {
     display: inline;
     color: #222222;
