@@ -1,6 +1,6 @@
-/** {*/
-    /*box-sizing: border-box;*/
-/*}*/
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
@@ -15,18 +15,23 @@ header {
 }
 #top {
     position: relative;
-    height: 50px;
+    /*height: 50px;*/
     width: 100%;
     z-index: 1;
 }
-.menu
-{
+.menu {
     position: fixed;
-    height: 80px;
+    top: 0;
+    background-color: #E9EBEE;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
+    opacity: 0.7;
+}
+.menu ul {
+    display: none;
 }
 nav li {
     display: inline;
@@ -35,6 +40,7 @@ nav li {
     padding: 0 15px;
     font-size: 18px;
     font-weight: bold;
+
 }
 nav li a {
     color: inherit;
@@ -46,20 +52,29 @@ nav li:last-of-type {
 nav li:hover {
     color: #0C4C7D;
 }
-.menu-short, .menu-short a {
+.menu-short {
     background-color: #E9EBEE;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
     cursor: pointer;
     border-radius: 5px;
     padding: 0 5px;
-    position: relative;
+    position: fixed;
+    z-index: 2;
+}
+.menu-short a {
+    background-color: #E9EBEE;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0 5px;
 }
 .menu-short span {
     display: block;
-    width: 26px;
+    width: 25px;
     height: 3px;
     border-radius: 1px;
     background-color: #222222;
@@ -82,32 +97,32 @@ input.checkbox-menu {
 
 .menu-short-collapse {
     position: fixed;
-    right: -160px;
+    left: -100px;
     top: 80px;
-    width: 160px;
+    width: 100px;
     color: #E9EBEE;
     background-color: #222222;
-    transition: right 2s;
-    -webkit-transition: right 2s;
+    transition: left 2s;
+    -webkit-transition: left 2s;
     padding-bottom: 10px;
     opacity: 0.9;
 }
 
-span.menu-short-list {
-    padding: 10px 0 10px 25px;
+span.menu-shortlist {
+    padding: 10px 0 15px 20%;
     border-bottom: 4px solid #EAC67A;
 }
-span.menu-short-list a {
+span.menu-shortlist a {
     color: #E9EBEE;
     background: #222222;
 }
 
-span.menu-short-list a:hover {
+span.menu-shortlist a:hover {
     color: #EAC67A;
     background-color: #222222;
 }
 .menu-short input:checked~.menu-short-collapse {
-    right: 0;
+    left: 0;
 }
 h1 {
     color: #3A3030;
@@ -131,36 +146,12 @@ h1 {
     text-shadow: 2px 2px #3A3030;
 
 }
-
-.slogan p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #1E98AA;
-    color: #EAC67A;
-    text-align: center;
-    margin: 2px auto;
-}
-.experience {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #E9EBEE;
-}
-
-.exp-chart {
-    text-align: center;
-}
-
+/*End of header*/
 .chart {
     width: 50px;
     height: 50px;
+    padding-right: 30px;
 }
-.exp-chart p {
-    font-family: Oswald, sans-serif;
-    color: #565656;
-}
-/*End of header*/
 
 /*Main*/
 main {
