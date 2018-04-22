@@ -1,6 +1,6 @@
-/** {*/
-    /*box-sizing: border-box;*/
-/*}*/
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
@@ -49,7 +49,7 @@ nav li:last-of-type {
 nav li:hover {
     color: #0C4C7D;
 }
-.menu-short, .menu-short a {
+.menu-short {
     background-color: #E9EBEE;
     font-size: 18px;
     font-weight: bold;
@@ -58,7 +58,15 @@ nav li:hover {
     cursor: pointer;
     border-radius: 5px;
     padding: 0 5px;
-    position: relative;
+    position: fixed;
+}
+.menu-short a {
+    background-color: #E9EBEE;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0 5px;
 }
 .menu-short span {
     display: block;
@@ -85,9 +93,9 @@ input.checkbox-menu {
 
 .menu-short-collapse {
     position: fixed;
-    right: -160px;
+    right: -130px;
     top: 80px;
-    width: 160px;
+    width: 130px;
     color: #E9EBEE;
     background-color: #222222;
     transition: right 2s;
@@ -96,16 +104,16 @@ input.checkbox-menu {
     opacity: 0.9;
 }
 
-span.menu-short-list {
-    padding: 10px 0 10px 25px;
+span.menu-shortlist {
+    padding: 10px 0 10px 0;
     border-bottom: 4px solid #EAC67A;
 }
-span.menu-short-list a {
+span.menu-shortlist a {
     color: #E9EBEE;
     background: #222222;
 }
 
-span.menu-short-list a:hover {
+span.menu-shortlist a:hover {
     color: #EAC67A;
     background-color: #222222;
 }
