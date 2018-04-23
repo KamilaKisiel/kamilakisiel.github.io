@@ -167,6 +167,11 @@ main {
     width: 315px;
     padding-right: 20px;
 }
+.project-container p {
+    text-align: center;
+    background-color: #E9EBEE;
+    border-radius: 3px;
+}
 .project-container img{
     display: block;
     height: 200px;
