@@ -148,7 +148,6 @@ h1 {
     text-shadow: 2px 2px #3A3030;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 /*End of header*/
 .chart {
@@ -216,27 +215,28 @@ p {
 
 /*Footer*/
 footer {
-    background-color: #1E98AA;
-    padding: 20px;
+    background-color: #CCCCCC;
+    padding: 5px 20px;
     margin-top: 20px;
-    border-top: 3px solid #EAC67A;
 }
 .copyright {
-    color: #EAC67A;
+    color: #3A3030;
     font-family: 'Oswald', sans-serif;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
-
+footer h2 {
+    margin: 5px 0;
+}
 .contact-icons {
     display: table;
     position: relative;
-    z-index: 5;
-
 }
 .contact-icon-list {
     width: 178px;
     height: 42px;
     display: table-cell;
+    -webkit-padding-start: 10px;
 }
 
 .contact-icon {
@@ -245,14 +245,17 @@ footer {
     position: relative;
     top: 10px;
     left: 10px;
+
 }
 
 .contact-icon-element {
-    border: 2px solid #EAC67A;
+    /*border: 2px solid #EAC67A;*/
+    margin-right: 10px;
     border-radius: 50%;
     display: inline-block;
     height: 42px;
     width: 42px;
+    background-color: #0C4C7D;
 }
 /*End of footer*/
 
