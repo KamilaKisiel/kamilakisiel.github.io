@@ -136,15 +136,18 @@ h1 {
 }
 .job-title {
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     text-align: center;
     position: relative;
     top: 25vh;
 }
-.job-title h1 {
+.job-title p {
     font-size: 50px;
+    font-family: 'Oswald', sans-serif;
     color: #EAC67A;
     text-shadow: 2px 2px #3A3030;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 /*End of header*/
