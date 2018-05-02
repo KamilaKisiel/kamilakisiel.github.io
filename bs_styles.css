@@ -55,7 +55,7 @@ h1 {
 }
 .experience-section {
     background-color: #fefefe;
-    border-bottom: 3px solid #EAC67A;
+    /*border-bottom: 3px solid #EAC67A;*/
 }
 .experience-item {
     padding: 20px 0;
@@ -69,23 +69,13 @@ h1 {
     flex-flow: wrap;
     justify-content: center;
 }
-#o-mnie {
-    background-image: url("images/abstract.jpg");
-    background-size: cover;
-    text-align: center;
-    display: inline-block;
-}
-#o-mnie p {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-}
+
 img.autor {
     max-width: 100%;
     width: 190px;
     vertical-align: middle;
     border-radius: 100%;
-    margin: 0 auto;
+    margin: 10px 0;
     clear: both;
 }
 h2 {
