@@ -183,6 +183,11 @@ main {
     padding: 5px;
     border-radius: 5%;
     vertical-align: bottom;
+    transition: all 1s;
+}
+
+.project-container img:hover {
+    transform: scale(1.1);
 }
 
 img.autor {
