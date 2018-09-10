@@ -3,6 +3,8 @@
 
 #### *[Części samochodowe - zapowiedź](https://github.com/infoshareacademy/jfdz7-swiezaki)*
 - Zapowiedź aplikacji do wyszukiwania części zamiennych do samochodu
+#### *[Części samochodowe - gra](https://github.com/infoshareacademy/jfdz7-swiezaki/tree/develop/game)*
+- Easter egg w nagrodę za zapis na premierę aplikacji do wyszukiwania części samochodowych
 #### *[Części samochodowe - aplikacja](https://github.com/infoshareacademy/jfdz7-swiezaki-app)*
 - Aplikacja do wyszukiwania części zamiennych do samochodu
 #### *[Robofriends](https://github.com/KamilaKisiel/robofriends)*
